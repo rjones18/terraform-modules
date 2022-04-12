@@ -110,7 +110,7 @@ resource "aws_route_table_association" "internet_route_table_association_data-a"
 }
 
 # ASSOCIATE ROUTE TABLE -- DATA A LAYER
-resource "aws_route_table_association" "internet_route_table_association_data-a" {
+resource "aws_route_table_association" "internet_route_table_association_data-b" {
   subnet_id      = aws_subnet.data-b.id
   route_table_id = aws_route_table.nat_route_table.id
 }
