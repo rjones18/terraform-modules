@@ -12,10 +12,6 @@ variable "region_name" {
     type = string
 }
 
-variable "public_cidr" {
-    description = "The Public subnet cidr for AZ a"
-    type = string
-}
 
 variable "public_a_cidr" {
     description = "The Public subnet cidr for AZ a"
