@@ -52,6 +52,15 @@ resource "aws_subnet" "private-a" {
   cidr_block        = "${var.private_a_cidr}"
   availability_zone = "${var.region_name}"
   tags = {
+    Name = "${var.project_name}-private-a"
+  }
+}
+
+resource "aws_subnet" "private-b" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "${var.private_b_cidr}"
+  availability_zone = "${var.region_name}"
+  tags = {
     Name = "${var.project_name}-private-b"
   }
 }
