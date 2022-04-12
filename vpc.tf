@@ -66,7 +66,7 @@ resource "aws_internet_gateway" "igw" {
 
 resource "aws_nat_gateway" "nat_gw" {
   allocation_id = aws_eip.nat_eip.id
-  subnet_id     = aws_subnet.public.id
+  subnet_id     = aws_subnet.public-a.id
 
   tags = {
     Name = "${var.project_name}-nat_gw"
