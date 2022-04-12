@@ -23,10 +23,6 @@ variable "public_b_cidr" {
     type = string
 }
 
-variable "private_cidr" {
-    description = "The Private subnet cidr"
-    type = string
-}
 
 variable "private_a_cidr" {
     description = "The Private subnet cidr for AZ a"
